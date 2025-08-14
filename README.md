@@ -4,8 +4,6 @@
 
 LearnIt is a lightweight, multi-page educational website that showcases course categories and simple auth screens, built with plain HTML, CSS, and vanilla JavaScript.
 
-![Hero](static/pics/hero.jpg)
-
 ### ✨ Features
 - **Responsive landing page**: hero, categories, and featured sections
 - **Course pages**: e.g., Graphic Design 🎨
@@ -39,9 +37,7 @@ LearnIt/
           └── (images)
 ```
 
-### 🖼️ Screenshots
-![Courses](static/pics/programming.jpg)
-![Design](static/pics/design.jpg)
+
 
 ### 🚀 Getting Started
 - Open `index.html` directly in your browser, or serve locally:

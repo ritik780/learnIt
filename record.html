@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Record Video • LearnIt</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/style.css" />
+  <link rel="icon" type="image/png" href="static/pics/favicon.png" sizes="16x16" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1><a href="index.html" style="text-decoration:none; color:inherit;">LearnIt</a></h1>
+    </div>
+    <button class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#free-courses">Free Courses</a></li>
+        <li><a href="index.html#paid-courses">Paid Courses</a></li>
+        <li><a href="index.html#contact-us">Contact Us</a></li>
+        <li><a href="index.html#about-us">About LearnIt</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="record.html" aria-current="page">Record</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="recorder-page">
+    <section class="recorder-hero">
+      <div class="recorder-hero-inner">
+        <h2>Record Video</h2>
+        <p>Use your camera and microphone to record a lesson, assignment, or quick update. Your recordings stay on your device.</p>
+      </div>
+    </section>
+
+    <section class="recorder-container">
+      <div class="secure-context-warning" id="secureWarning" hidden>
+        <i class='bx bx-error-circle'></i>
+        <span>Camera access requires a secure context. Open this site via HTTPS or run on <code>localhost</code>.</span>
+      </div>
+
+      <div class="device-row">
+        <div class="device-select">
+          <label for="cameraSelect">Camera</label>
+          <select id="cameraSelect"></select>
+        </div>
+        <div class="device-select">
+          <label for="micSelect">Microphone</label>
+          <select id="micSelect"></select>
+        </div>
+        <button class="btn" id="refreshDevices" title="Refresh devices">
+          <i class='bx bx-refresh'></i>
+        </button>
+      </div>
+
+      <div class="preview-row">
+        <div class="video-wrapper">
+          <video id="livePreview" autoplay playsinline muted></video>
+          <div class="recording-badge" id="recordingBadge" hidden>
+            <span></span>
+            <em>REC</em>
+          </div>
+        </div>
+        <div class="video-wrapper">
+          <video id="playback" controls playsinline></video>
+        </div>
+      </div>
+
+      <div class="controls-row">
+        <div class="controls">
+          <button class="btn" id="startBtn"><i class='bx bx-video-recording'></i> Start</button>
+          <button class="btn" id="pauseBtn" disabled><i class='bx bx-pause-circle'></i> Pause</button>
+          <button class="btn" id="resumeBtn" disabled><i class='bx bx-play-circle'></i> Resume</button>
+          <button class="btn danger" id="stopBtn" disabled><i class='bx bx-stop-circle'></i> Stop</button>
+        </div>
+        <div class="controls">
+          <button class="btn ghost" id="muteBtn"><i class='bx bx-microphone'></i> Mute</button>
+          <button class="btn ghost" id="cameraToggleBtn"><i class='bx bx-video'></i> Camera Off</button>
+        </div>
+        <div class="status">
+          <span id="timer">00:00</span>
+          <span id="sizeLabel">0 MB</span>
+          <span id="mimeLabel">—</span>
+        </div>
+      </div>
+
+      <div class="actions-row">
+        <a id="downloadLink" class="btn" download="recording.webm" hidden>
+          <i class='bx bx-download'></i> Download
+        </a>
+        <button id="newRecordingBtn" class="btn ghost" hidden>
+          <i class='bx bx-reset'></i> New Recording
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img style="height: 250px;width: 250px;" src="static/pics/favicon.png" alt="LearnIt logo" />
+        <p>Expand your knowledge</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#free-courses">Free Courses</a></li>
+          <li><a href="index.html#paid-courses">Paid Courses</a></li>
+          <li><a href="index.html#contact-us">Contact Us</a></li>
+          <li><a href="index.html#about-us">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form>
+          <input type="email" placeholder="Enter your email" />
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 LearnIt. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="static/js/script.js"></script>
+  <script src="static/js/record.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnIt</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="icon" type="image/png" href="static/pics/favicon.png" sizes="16x16" />
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <h1>LearnIt</h1>
+    </div>
+    <button class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav>
+      <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#free-courses">Free Courses</a></li>
+        <li><a href="#paid-courses">Paid Courses</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
+        <li><a href="#record-guide">Record</a></li>
+        <li><a href="#about-us">About LearnIt</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="hero-section">
+      <img id="hero-img" src="static/pics/9881382.jpg" alt="LearnIt Hero Image">
+      <div class="hero-text">
+        <h2>Learn Anything, Anytime</h2>
+        <p>Welcome to LearnIt - your ultimate destination for smart, simple, and effective learning. Whether you're a student
+        aiming to boost your academic performance, a professional looking to upskill, or a curious mind eager to explore new
+        topics, LearnIt is here to guide your journey. With expertly crafted courses, interactive tools, and a learner-first
+        approach, we make education engaging and accessible for everyone. Start learning today and unlock your full potential
+        with LearnIt!</p>
+        <a href="#free-courses" class="btn">Start Learning</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="free-courses" id="free-courses">
+    <div class="section-header">
+      <h2>Free Courses</h2>
+      <p>Begin your learning journey with our free courses</p>
+    </div>
+    </div>
+    <div class="courses-container">
+      <div class="course-card">
+        <img src="static/pics/programming.jpg" alt="Programming Course">
+        <h3>Programming Basics</h3>
+        <p>Learn the fundamentals of coding</p>
+        <a href="course1.html" class="btn">View Course</a>
+      </div>
+      <div class="course-card">
+        <img src="static/pics/design.jpg" alt="Design Course">
+        <h3>Graphic Design</h3>
+        <p>Master the art of visual communication</p>
+        <a href="graphicdesign.html" class="btn">View Course</a>
+      </div>
+      <div class="course-card">
+        <img src="static/pics/language.jpg" alt="Language Course">
+        <h3>Language Learning</h3>
+        <p>Start speaking a new language today</p>
+        <a href="#" class="btn">View Course</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="paid-courses" id="paid-courses">
+    <div class="section-header">
+      <h2>Premium Courses</h2>
+      <p>Advance your skills with our premium content</p>
+    </div>
+    <div class="courses-container">
+      <div class="course-card premium">
+        <img src="static/pics/advanced-programming.jpg" alt="Advanced Programming">
+        <h3>Advanced Programming</h3>
+        <p>Take your coding skills to the next level</p>
+        <span class="price">₹11</span>
+        <a href="#" class="btn">Enroll Now</a>
+      </div>
+      <div class="course-card premium">
+        <img src="static/pics/business.jpg" alt="Business Course">
+        <h3>Business Management</h3>
+        <p>Learn essential business skills</p>
+        <span class="price">₹21</span>
+        <a href="#" class="btn">Enroll Now</a>
+      </div>
+      <div class="course-card premium">
+        <img src="static/pics/fitness.jpg" alt="Fitness Course">
+        <h3>Advanced Fitness</h3>
+        <p>Comprehensive fitness training program</p>
+        <span class="price">₹51</span>
+        <a href="#" class="btn">Enroll Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="record-guide" id="record-guide">
+    <div class="section-header">
+      <h2>Record Your Own Lessons</h2>
+      <p>Create quick video explanations, assignments, or project updates.</p>
+    </div>
+    <div class="record-container">
+      <div class="record-text">
+        <h3>How to record</h3>
+        <ul class="record-steps">
+          <li><i class='bx bx-camera'></i> Allow camera and microphone when prompted.</li>
+          <li><i class='bx bx-cog'></i> Pick your camera and mic from the dropdowns.</li>
+          <li><i class='bx bx-video-recording'></i> Click <b>Start</b> to record. Use <b>Pause</b>/<b>Resume</b> as needed.</li>
+          <li><i class='bx bx-stop-circle'></i> Click <b>Stop</b> to finish, then preview and <b>Download</b>.</li>
+        </ul>
+        <div class="record-notes">
+          <p><i class='bx bx-lock'></i> Works best on <b>HTTPS</b> or <b>localhost</b> (required by browsers for camera access).</p>
+          <p><i class='bx bx-info-circle'></i> Recordings are saved locally on your device.</p>
+        </div>
+        <a href="record.html" class="btn">Open Recorder</a>
+      </div>
+      <div class="record-illustration">
+        <div class="illustration-box">
+          <i class='bx bx-movie-play'></i>
+          <p>Live Preview</p>
+        </div>
+        <div class="illustration-box">
+          <i class='bx bx-download'></i>
+          <p>Download as WebM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-us" id="contact-us">
+    <div class="section-header">
+      <h2>Contact Us</h2>
+      <p>Have questions? We're here to help!</p>
+    </div>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p style="color:white;"> <i style="color: whitesmoke;" class='bx bxs-envelope'></i>ritiktomar2804@gmail.com</p>
+      <p style="color:white;"><i style="color: whitesmoke;" class='bx bxl-instagram-alt'><a style="color: whitesmoke; text-decoration: none;" href="https://www.instagram.com/ritik._.thakur/">ritik._.thakur</a></i></p>
+      <p style="color:white;"> <i class='bx bx-phone-call'></i><a style="color: whitesmoke; text-decoration: none;" href="">8360843875</a></i></p>
+        
+      </div>
+      <div class="contact-form">
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-us" id="about-us">
+    <div class="section-header">
+      <h2>About LearnIt</h2>
+      <p>Learn more about LearnIt</p>
+    </div>
+    <div class="about-container">
+      <div class="about-image">
+        
+        <img src="static/pics/pngtree-book-globe-study-cartoon-illustration-png-image_9100470.png" alt="Our Team">
+      </div>
+      <div class="about-text">
+        <h3>Our Story</h3>
+        <p>LearnIt was founded with a simple mission: to make quality education accessible to everyone. We believe that
+          learning should be engaging, comprehensive, and adaptable to individual needs.</p>
+        <p>We are trying to bring the best tutors available over the internet on your screens.</p>
+        <h3>Our Values</h3>
+        <ul>
+          <li>Accessibility</li>
+          <li>Quality</li>
+          <li>Innovation</li>
+          <li>Community</li>
+  
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img style="height: 250px;width: 250px;" src="static/pics/favicon.png">
+        <p>Expand your knowledge</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#free-courses">Free Courses</a></li>
+          <li><a href="#paid-courses">Paid Courses</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+          <li><a href="#about-us">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form>
+          <input type="email" placeholder="Enter your email">
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 LearnIt. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="static/js/script.js"></script>
+</body>
+
+</html>
